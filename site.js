@@ -1,4 +1,4 @@
-const config = window.OVERLAYQA_SITE || { price: "$24", checkoutUrl: "https://www.creem.io/", contact: "privacy@overlayqa.app" };
+const config = window.OVERLAYQA_SITE || { price: "$24", checkoutUrl: "https://www.creem.io/", contact: "mulianju@qq.com" };
 
 const stored = localStorage.getItem("oqa-lang");
 const initial = stored || (navigator.language.toLowerCase().startsWith("zh") ? "zh" : "en");
