@@ -21,7 +21,7 @@ Source: GitHub Actions (`.github/workflows/deploy-pages.yml`). Do not add a cust
 3. Settings → Actions → General → Workflow permissions: **Read and write permissions**.
 4. Push to `main`. The site is `https://mulianju.github.io/overlayqa/`.
 
-`config.js` holds the price and the Creem checkout URL. `privacy@overlayqa.app` is still a contact placeholder.
+`config.js` holds the price, the Creem checkout URL, and the contact email (`mulianju@qq.com`).
 
 ## 说明
 
