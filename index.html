@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OverlayQA</title>
+    <meta name="description" content="Overlay a design mockup on a live page. Free layers, scale, and difference blend. No ads." />
+    <link rel="canonical" href="https://mulianju.github.io/overlayqa/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OverlayQA" />
+    <meta property="og:title" content="OverlayQA" />
+    <meta property="og:description" content="Overlay a design mockup on a live page. Free layers, scale, and difference blend. No ads." />
+    <meta property="og:url" content="https://mulianju.github.io/overlayqa/" />
+    <meta property="og:image" content="https://mulianju.github.io/overlayqa/icon-128.png" />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./site.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="nav">
+        <a class="word" href="./index.html"><img src="./favicon.png" alt="" /> OverlayQA</a>
+        <nav class="links">
+          <a href="#features"><span class="en">Features</span><span class="zh">功能</span></a>
+          <a href="#compare"><span class="en">Free vs Pro</span><span class="zh">免费与 Pro</span></a>
+          <a href="#pricing"><span class="en">Pricing</span><span class="zh">价格</span></a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <button class="lang" type="button" data-lang="en">EN</button>
+        <button class="lang" type="button" data-lang="zh">中文</button>
+      </header>
+
+      <section class="hero">
+        <div>
+          <p class="kicker"><span class="en">Design QA, without the paywall</span><span class="zh">设计走查，不必再被付费墙拦住</span></p>
+          <h1><span class="en">Put the mock on the real page.</span><span class="zh">把设计稿叠到真实页面上。</span></h1>
+          <p class="lede en">OverlayQA lays a Figma export over the site you are building. Opacity, scale, and difference blend stay free. Images never leave the browser.</p>
+          <p class="lede zh">OverlayQA 把 Figma 导出图叠在你正在做的网页上。透明度、缩放和差值混合一直免费。图片不会离开浏览器。</p>
+          <div class="cta-row">
+            <a class="btn solid" href="#install"><span class="en">Load the extension</span><span class="zh">安装扩展</span></a>
+            <a class="btn lime" data-checkout href="https://www.creem.io/"><span class="en">Pro </span><span class="zh">Pro </span><span data-price>$24</span></a>
+          </div>
+        </div>
+        <div class="stage" id="demo">
+          <div class="stage-bar"><i></i><i></i><i></i></div>
+          <div class="mini">
+            <div class="mini-page">
+              <p class="kicker">Northwind</p>
+              <h3>Order ahead</h3>
+              <span class="fake-btn">$4.80</span>
+            </div>
+            <div class="mini-design" id="design-layer">
+              <p class="kicker">Northwind</p>
+              <h3>Order ahead</h3>
+              <span class="fake-btn">$4.50</span>
+            </div>
+          </div>
+          <div class="controls">
+            <label><span class="en">Opacity</span><span class="zh">不透明度</span> <input id="opacity" type="range" min="0" max="100" value="55" /></label>
+            <label><span class="en">Blend</span><span class="zh">混合</span>
+              <select id="blend">
+                <option value="normal">Normal</option>
+                <option value="difference">Difference</option>
+              </select>
+            </label>
+            <label><input id="invert" type="checkbox" /> <span class="en">Invert</span><span class="zh">反相</span></label>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <h2><span class="en">What stays free</span><span class="zh">一直免费的部分</span></h2>
+        <div class="grid">
+          <article class="card"><h3><span class="en">Many layers</span><span class="zh">多个图层</span></h3><p class="en">Drop, pick, or paste as many exports as the page needs. Nothing stops at two.</p><p class="zh">拖入、选择或粘贴，一个页面可以叠很多张导出图，不再停在两层。</p></article>
+          <article class="card"><h3><span class="en">Nudge and scale</span><span class="zh">微移和缩放</span></h3><p class="en">Arrow keys move 1px, Shift moves 10px. @2x exports drop in at 0.5, or match the screen DPR.</p><p class="zh">方向键移动 1px，按住 Shift 移动 10px。@2x 导出图用 0.5 倍，也可以对齐屏幕 DPR。</p></article>
+          <article class="card"><h3><span class="en">Difference blend</span><span class="zh">差值混合</span></h3><p class="en">Matching pixels go dark. The misses light up. Invert is there when the mock is the wrong polarity.</p><p class="zh">对上的像素会变暗，对不上的会亮出来。稿子极性反了还可以反相。</p></article>
+          <article class="card"><h3><span class="en">Click-through</span><span class="zh">点击穿透</span></h3><p class="en">Lock the overlay and the page underneath stays clickable.</p><p class="zh">锁定叠层之后，下面的页面仍然可以点击。</p></article>
+          <article class="card"><h3><span class="en">Remembered per site</span><span class="zh">按站点记住</span></h3><p class="en">Position, opacity, and scale are stored for the origin, or for one path when you want that.</p><p class="zh">位置、透明度和缩放按来源记住，也可以只记当前路径。</p></article>
+          <article class="card"><h3><span class="en">No ads, no account</span><span class="zh">没有广告，也不用账号</span></h3><p class="en">The free tools are not a trial. There is no tracker in the package.</p><p class="zh">免费功能不是试用。安装包里没有追踪器。</p></article>
+        </div>
+      </section>
+
+      <section id="compare">
+        <h2><span class="en">Free and Pro</span><span class="zh">免费与 Pro</span></h2>
+        <table>
+          <thead>
+            <tr><th></th><th><span class="en">Free</span><span class="zh">免费</span></th><th>Pro</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="en">Layers, opacity, position, scale, blend, invert, lock</span><span class="zh">图层、透明度、位置、缩放、混合、反相、锁定</span></td><td>Yes</td><td>Yes</td></tr>
+            <tr><td><span class="en">Saved on this device</span><span class="zh">保存在这台设备上</span></td><td>Yes</td><td>Yes</td></tr>
+            <tr><td><span class="en">Figma frame import</span><span class="zh">从 Figma 导入画板</span></td><td>—</td><td>Yes</td></tr>
+            <tr><td><span class="en">Split view</span><span class="zh">分屏对照</span></td><td>—</td><td>Yes</td></tr>
+            <tr><td><span class="en">Breakpoint guides</span><span class="zh">断点参考线</span></td><td>—</td><td>Yes</td></tr>
+            <tr><td><span class="en">Annotated screenshot</span><span class="zh">带批注的截图</span></td><td>—</td><td>Yes</td></tr>
+            <tr><td><span class="en">Layer folders</span><span class="zh">图层文件夹</span></td><td>—</td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="pricing">
+        <h2><span class="en">One payment</span><span class="zh">一次买断</span></h2>
+        <div class="price-card">
+          <strong data-price>$24</strong>
+          <p class="en">One-time Pro license, checked by a small Cloudflare Worker against Creem. The price on this page is a placeholder until the store link is connected.</p>
+          <p class="zh">Pro 是一次性许可。扩展把密钥交给一个很小的 Cloudflare Worker，再由它向 Creem 校验。商店链接接上之前，这里的价格只是占位。</p>
+          <a class="btn solid" data-checkout href="https://www.creem.io/"><span class="en">Get Pro</span><span class="zh">购买 Pro</span></a>
+        </div>
+      </section>
+
+      <section id="install">
+        <h2><span class="en">Run it locally</span><span class="zh">在本地运行</span></h2>
+        <p class="en">Build with <code>npm run build:dev</code>, then load the <code>dist</code> folder from chrome://extensions with Developer mode on. The store zip is <code>npm run package</code>.</p>
+        <p class="zh">先运行 <code>npm run build:dev</code>，再在 chrome://extensions 打开开发者模式，加载 <code>dist</code> 文件夹。商店用的压缩包是 <code>npm run package</code>。</p>
+      </section>
+
+      <section class="faq" id="faq">
+        <h2>FAQ</h2>
+        <details open>
+          <summary><span class="en">Does the extension upload my mockups?</span><span class="zh">扩展会上传我的设计稿吗？</span></summary>
+          <p class="en">No. Images and layer settings stay in Chrome storage and IndexedDB on the device. A license key is the only product data sent out, and it goes to your license Worker.</p>
+          <p class="zh">不会。图片和图层设置留在这台设备的 Chrome storage 和 IndexedDB 里。唯一会发出去的产品数据是许可密钥，而且只发给你的许可 Worker。</p>
+        </details>
+        <details>
+          <summary><span class="en">Why can the extension read sites?</span><span class="zh">为什么扩展能读取网站？</span></summary>
+          <p class="en">The overlay has to be drawn on the page. The script does nothing until you enable OverlayQA on that origin. It does not ship analytics.</p>
+          <p class="zh">叠层必须画在页面上。在你为该来源启用 OverlayQA 之前，脚本不会做任何事。扩展不带分析。</p>
+        </details>
+        <details>
+          <summary><span class="en">What is Pro today?</span><span class="zh">现在的 Pro 包含什么？</span></summary>
+          <p class="en">Figma import and split view work. Breakpoint guides, notes on an exported screenshot, and folders are included. Window-resizing presets are guides, not a resized browser.</p>
+          <p class="zh">Figma 导入和分屏已经可用。断点参考线、导出截图上的批注和文件夹也包含在内。断点不会真的改变浏览器窗口大小，而是画出参考线。</p>
+        </details>
+      </section>
+
+      <footer>
+        <span>OverlayQA</span>
+        <span>
+          <a href="./privacy.html"><span class="en">Privacy</span><span class="zh">隐私政策</span></a>
+          ·
+          <a href="./terms.html"><span class="en">Terms</span><span class="zh">服务条款</span></a>
+        </span>
+      </footer>
+    </div>
+    <script src="./config.js"></script>
+    <script src="./site.js"></script>
+  </body>
+</html>
